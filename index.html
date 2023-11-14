@@ -3,46 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enon Deogracious Jurence</title>
+    <title>Resume - Alex Mercer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <div class="header-title">
-        <h1>Enon Deogracious Jurence</h1>
-        <p class="title">Full Stack QA Engineer</p>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-
-<section id="about">
-    <h2>About Me</h2>
-    <p>...</p>
-</section>
-
-<section id="portfolio">
-    <h2>Portfolio</h2>
-    <div class="project">
-        <h3>Project Title 1</h3>
-        <p>Description of Project 1</p>
-        <!-- Include more details or a link to the project -->
-    </div>
-    <!-- Repeat for other projects -->
-</section>
-
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:jurencenon@gmail.com">jurencenon@gmail.com</a></p>
-</section>
+<div class="resume-container">
+    <aside class="sidebar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <nav class="resume-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="active"><a href="#resume">Resume</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="resume-content">
+        <section id="skills">
+            <h2>Expertise</h2>
+            <div class="skill">
+                <label>JavaScript</label>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <label>Typescript</label>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 70%;"></div>
+                </div>
+            </div>
+            <!-- Add more skill bars as needed -->
+        </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            <!-- Experience details here -->
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <!-- Education details here -->
+        </section>
+    </main>
+</div>
 
 <footer>
-    <p>© 2023 Enon Deogracious Jurence</p>
+    <p>Copyright © 2023 Alex Mercer</p>
 </footer>
 </body>
 </html>

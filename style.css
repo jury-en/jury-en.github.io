@@ -1,59 +1,97 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
-    padding: 0;
-    color: #f4f4f4; /* Light text for dark background */
-    background-color: #1a1a1a; /* Dark background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
 }
 
-header {
-    background: #333; /* Darker background for the header */
+.resume-container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #1c1c1c;
+    height: 100vh;
     padding: 20px;
+}
+
+.logo {
     text-align: center;
-    border-bottom: 1px solid #444; /* Subtle border for separation */
+    padding-bottom: 20px;
 }
 
-header h1, header p {
-    margin: 0;
-    color: #f4f4f4; /* Light text color */
+.logo img {
+    max-width: 100%;
+    height: auto;
 }
 
-nav ul {
+.resume-nav ul {
     list-style: none;
     padding: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+.resume-nav ul li {
+    padding: 10px 0;
 }
 
-nav ul li a {
+.resume-nav ul li.active a,
+.resume-nav ul li a:hover {
+    color: #f0c674;
+}
+
+.resume-nav ul li a {
+    color: #ffffff;
     text-decoration: none;
-    color: #f4f4f4; /* Light text color for links */
+    transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #d1d1d1; /* Slightly lighter color on hover */
+.resume-content {
+    flex-grow: 1;
+    padding: 40px;
 }
 
-section {
-    padding: 20px;
-    background-color: #262626; /* Slightly lighter than body for contrast */
+.resume-content h2 {
+    border-bottom: 1px solid #f0c674;
+    color: #f0c674;
+    padding-bottom: 5px;
 }
 
-.project {
-    background: #333; /* Dark background for project cards */
-    color: #f4f4f4; /* Light text color */
-    margin-bottom: 20px;
-    padding: 15px;
-    border-radius: 8px;
-}
+/* Add your skill bars and other styles here */
 
 footer {
     text-align: center;
     padding: 20px;
-    background: #333; /* Dark background for the footer */
-    color: #f4f4f4; /* Light text color */
+    background-color: #1c1c1c;
+    color: #ffffff;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill label {
+    display: block;
+    margin-bottom: 5px;
+    color: #f0c674;
+}
+
+.skill-bar {
+    width: 100%;
+    background-color: #333;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.skill-level {
+    height: 20px;
+    border-radius: 5px;
+    background-color: #f0c674;
+    width: 0; /* Set initial width to 0 for animation */
+    transition: width 1s ease-in-out;
+}
+
+/* Hover effect to animate skill bars */
+.skill-bar:hover .skill-level {
+    width: 90%; /* Adjust to the desired skill level */
 }
