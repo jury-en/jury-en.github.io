@@ -9,13 +9,14 @@
 <body>
 <div class="resume-container">
     <aside class="sidebar">
+        <!-- Logo and Navigation -->
         <div class="logo">
             <img src="logo.png" alt="Logo">
         </div>
         <nav class="resume-nav">
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href=about.html>About</a></li>
+                <li><a href="#about">About</a></li>
                 <li class="active"><a href="#resume">Resume</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
@@ -25,35 +26,78 @@
         </nav>
     </aside>
     <main class="resume-content">
-        <section id="skills">
-            <h2>Expertise</h2>
-            <div class="skill">
-                <label>JavaScript</label>
-                <div class="skill-bar">
-                    <div class="skill-level" style="width: 85%;"></div>
+        <!-- Skills Section -->
+        <section id="home" class="skills-section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-column">
+                    <!-- Column 2 for Skills -->
+                    <div class="skill">Javascript</div>
+                    <div class="skill">Python</div>
+                    <div class="skill">SQL</div>
+                </div>
+                <div class="skill-column">
+                    <!-- Column 2 for Skills -->
+                    <div class="skill">Communication</div>
+                    <div class="skill">Reliability</div>
+                    <div class="skill">Flexibility</div>
+                </div>
+                <div class="skill-column">
+                    <!-- Column 3 for Skills -->
+                    <div class="skill">Analysis</div>
+                    <div class="skill">Web development</div>
+                    <div class="skill">Cyber security</div>
                 </div>
             </div>
-            <div class="skill">
-                <label>Typescript</label>
-                <div class="skill-bar">
-                    <div class="skill-level" style="width: 70%;"></div>
-                </div>
-            </div>
-            <!-- Add more skill bars as needed -->
         </section>
-        <section id="experience">
-            <h2>Experience</h2>
+
+        <section id="tools" class="tools-section">
+            <h2>Tools and Frameworks</h2>
+            <div class="skills-grid">
+                <div class="skill-column">
+                    <!-- Column 2 for Skills -->
+                    <div class="skill">Hopscotch</div>
+                    <div class="skill">CodeceptJs</div>
+                    <div class="skill">Playwright</div>
+                    <div class="skill">Testomat</div>
+                </div>
+                <div class="skill-column">
+                    <!-- Column 2 for Skills -->
+                    <div class="skill">Webdriverio</div>
+                    <div class="skill">Dbeaver</div>
+                    <div class="skill">Datadog</div>
+                    <div class="skill">Testrail</div>
+                </div>
+                <div class="skill-column">
+                    <!-- Column 3 for Skills -->
+                    <div class="skill">Git</div>
+                    <div class="skill">Burpsuite</div>
+                    <div class="skill">CircleCI</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+            <h2 class="section-icon">Experience</h2>
             <!-- Experience details here -->
         </section>
-        <section id="education">
-            <h2>Education</h2>
+
+        <!-- Education Section -->
+        <section id="education" class="education-section">
+            <h2 class="section-icon">Education</h2>
             <!-- Education details here -->
         </section>
     </main>
 </div>
-
+        </section>
+        <!-- Other Sections (Skills, Experience, etc.) -->
+        <!-- ... Your existing sections ... -->
+    </main>
+</div>
 <footer>
     <p>Copyright © 2023 Enon Deogracious Jurence</p>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>

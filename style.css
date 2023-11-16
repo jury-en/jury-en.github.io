@@ -49,15 +49,15 @@ body {
 .resume-content {
     flex-grow: 1;
     padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .resume-content h2 {
-    border-bottom: 1px solid #f0c674;
     color: #f0c674;
-    padding-bottom: 5px;
+    margin-bottom: 30px;
 }
-
-/* Add your skill bars and other styles here */
 
 footer {
     text-align: center;
@@ -66,32 +66,94 @@ footer {
     color: #ffffff;
 }
 
+/* Style for skill section */
 .skill {
+    background-color: #333;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    width: 250px; /* Adjust the width as per your design */
+    text-align: center;
+}
+
+.skills-section h2 {
+    color: #f0c674;
+    text-align: center;
     margin-bottom: 20px;
 }
 
-.skill label {
-    display: block;
-    margin-bottom: 5px;
-    color: #f0c674;
+.skills-grid {
+    display: flex;
+    justify-content: space-around;
 }
 
-.skill-bar {
-    width: 100%;
-    background-color: #333;
-    border-radius: 5px;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+.skill-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-.skill-level {
-    height: 20px;
-    border-radius: 5px;
+.skill-dot {
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.skill-name {
+    margin: 0 10px;
+    color: #fff;
+}
+
+.skill-line {
+    flex-grow: 1;
+    height: 1px;
     background-color: #f0c674;
-    width: 0; /* Set initial width to 0 for animation */
-    transition: width 1s ease-in-out;
 }
 
-/* Hover effect to animate skill bars */
-.skill-bar:hover .skill-level {
-    width: 90%; /* Adjust to the desired skill level */
+/* Add responsiveness to the skills grid */
+@media (max-width: 768px) {
+    .skills-grid {
+        flex-direction: column;
+    }
+}
+
+/* Style for section headers with icons */
+.section-header {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.section-header h2 {
+    display: inline-block;
+    margin: 0;
+    padding-right: 10px;
+    border-bottom: 2px solid #f0c674;
+}
+
+.section-header .icon {
+    padding: 10px;
+    border: 2px solid #f0c674;
+    margin-right: 10px;
+}
+
+/* Hover effect to animate skill labels */
+.skill:hover {
+    background-color: #f0c674;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+    .resume-content {
+        padding: 20px;
+    }
 }
