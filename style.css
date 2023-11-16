@@ -181,3 +181,63 @@ footer {
 .subheading.active .dropdown-icon {
     transform: rotate(180deg);
 }
+
+.about-content {
+    /* ... existing styles ... */
+    position: relative; /* To position the button relative to about-content */
+}
+/* Main Content Styles */
+.main-content {
+    max-width: 800px; /* Or your preferred width */
+    margin: 0 auto;
+    padding: 20px;
+    color: #fff;
+}
+
+.main-content h1 {
+    color: #f0c674; /* Or the color that matches your theme */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Button Styles */
+.download-cv {
+    display: block; /* Make the button a block element to fit the full container width */
+    width: max-content; /* Or a specific width if you want to define one */
+    margin-top: 20px; /* Add space above the button */
+    margin-left: auto; /* Align the button to the right */
+    margin-right: 0;
+    position: absolute; /* Position the button absolutely within about-content */
+    bottom: 0; /* Align the button at the bottom */
+    left: 0; /* Align the button to the left */
+    background-color: #f0c674; /* Match the color to your theme */
+    color: #333; /* Text color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Add padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor changes to indicate this is a clickable button */
+    font-size: 1em; /* Adjust font size as necessary */
+    font-weight: bold; /* Make the font bold */
+    text-transform: uppercase; /* Uppercase text */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+.download-cv:hover {
+    background-color: #e6b565; /* Slightly lighter color on hover */
+    /* Other hover effects like box-shadow can be added if desired */
+}
+
+/* If the about-content height is not enough to position the button at the bottom, consider adding a min-height */
+.about-content {
+    min-height: 500px; /* Adjust as necessary */
+}
+
+
+/* Add media queries as needed for responsiveness */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 10px;
+    }
+    /* ... other responsive styles ... */
+}
+
