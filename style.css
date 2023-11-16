@@ -157,3 +157,27 @@ footer {
         padding: 20px;
     }
 }
+
+.subheading h3 {
+    /* ... existing styles ... */
+    cursor: pointer; /* Indicates the element is clickable */
+    user-select: none; /* Prevent text selection */
+}
+
+.content-list {
+    list-style-type: none; /* Removes default list styling */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Ensures a clean animation start */
+    transition: max-height 0.5s ease-in-out; /* Smooth transition for the dropdown */
+}
+
+.dropdown-icon {
+    display: inline-block;
+    transition: transform 0.3s ease; /* Smooth transform on rotate */
+}
+
+/* Rotate icon when content list is shown */
+.subheading.active .dropdown-icon {
+    transform: rotate(180deg);
+}
