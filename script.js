@@ -21,24 +21,12 @@ function toggleContent(id) {
     }
 }
 
-// <script>
-//     document.addEventListener('DOMContentLoaded', () => {
-//         const navLinks = document.querySelectorAll('.resume-nav a');
-//         navLinks.forEach(link => {
-//             link.addEventListener('click', function(e) {
-//                 e.preventDefault();
-//                 // Remove active class from all links
-//                 navLinks.forEach(link => link.classList.remove('active'));
-//                 // Add active class to clicked link
-//                 this.classList.add('active');
-//                 const targetId = this.getAttribute('href');
-//                 const targetSection = document.querySelector(targetId);
-//                 targetSection.scrollIntoView({
-//                     behavior: 'smooth',
-//                     block: 'start'
-//                 });
-//             });
-//         });
-//     });
-// </script>
+// function toggleContent(id) {
+//     var content = document.getElementById(id);
+//     if (content.style.display === 'none' || content.style.display === '') {
+//         content.style.display = 'flex';
+//     } else {
+//         content.style.display = 'none';
+//     }
+// }
 

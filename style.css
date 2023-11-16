@@ -240,4 +240,93 @@ footer {
     }
     /* ... other responsive styles ... */
 }
+.skill-category ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+.skill-category li {
+    display: flex;
+    align-items: center; /* Align items on the same line */
+    margin-bottom: 10px;
+}
+
+.skill-name {
+    flex-grow: 1;
+    margin-right: 10px; /* Space between the skill name and the bar */
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Adjust the gap as needed */
+}
+
+.skill-bar {
+    flex-grow: 1;
+    background-color: #ddd; /* Background of the skill bar */
+    position: relative; /* Context for pseudo-elements */
+    height: 10px;
+    border-radius: 10px; /* Rounded corners */
+}
+.skill-bar-outter {
+    flex-grow: 1;
+    background-color: #ddd; /* Background of the outer bar */
+    border-radius: 10px;
+    position: relative;
+    margin-right: 10px; /* Give space for percentage */
+    width: 80%; /* Adjust to cover less space */
+}
+
+.skill-bar::before,
+.skill-bar::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px; /* Diameter of the dots */
+    height: 50px; /* Diameter of the dots */
+    background-color: #fff; /* Color of the dots */
+    border-radius: 50%; /* Round shape */
+    z-index: 2;
+}
+
+.skill-bar::before {
+    left: 0; /* Dot at the start of the bar */
+}
+
+.skill-bar::after {
+    left: 100%; /* Dot at the end of the bar */
+    transform: translate(-50%, -50%);
+}
+
+.skill-level {
+    background-color: #f0c674; /* Color of the skill level */
+    border-radius: 10px; /* Rounded corners */
+    height: 100%;
+    width: 0; /* Set initial width for animation */
+}
+.content-list {
+    display: flex;
+    justify-content: space-between;
+    /* Other styles as needed */
+}
+
+.dropdown-column {
+    list-style-type: none;
+    padding: 0;
+    width: 30%; /* Adjust the width as needed to fit three columns */
+    /* Additional styling for the columns */
+}
+
+/* Style for the dropdown icon */
+.dropdown-icon {
+    /* Styling for the icon */
+}
+
+/* Style for toggled content */
+.content-list.show {
+    display: flex;
+}
+
 
