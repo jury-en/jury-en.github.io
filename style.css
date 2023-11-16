@@ -262,6 +262,23 @@ footer {
     gap: 20px; /* Adjust the gap as needed */
 }
 
+.skill-column {
+    /* Styles for the skill column */
+}
+
+.content-list {
+    list-style: none; /* Removes default list styling */
+    padding-left: 0; /* Removes default padding */
+    /* Additional styles for dropdown content */
+}
+
+/* You may want to add media queries to handle responsiveness */
+@media screen and (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr; /* Stack the columns on smaller screens */
+    }
+}
+
 .skill-bar {
     flex-grow: 1;
     background-color: #ddd; /* Background of the skill bar */
