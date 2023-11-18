@@ -434,7 +434,96 @@ footer {
     padding: 10px; /* Example padding, adjust as per your design */
     /* Rest of the styles as per your design */
 }
+/* Assuming the rest of your CSS is already in place */
 
+.about-content {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    justify-content: space-between; /* Space out the children (text and image) */
+    padding: 20px;
+}
 
+.about-text {
+    width: 50%; /* Take up half the width of the container */
+    /* Add any padding or margins as necessary */
+}
+
+.about-image {
+    width: 50%; /* Take up the other half of the width of the container */
+    display: flex;
+    justify-content: flex-end; /* Align the image to the right */
+}
+
+.profile-pic {
+    width: auto; /* Adjust width as needed */
+    max-width: 100%; /* Ensure image is not bigger than its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Circular profile picture */
+}
+
+.about-actions {
+    /* Container for buttons to group them together */
+}
+
+.btn {
+    /* Style your buttons here */
+    margin-right: 10px; /* Add space between the buttons */
+    text-decoration: none; /* Remove underline from the link */
+}
+
+.btn:last-child {
+    margin-right: 0; /* Remove margin for the last button */
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text, .about-image {
+        width: 100%;
+    }
+
+    .about-image {
+        order: -1; /* Bring the image above the text on smaller screens */
+    }
+
+    .profile-pic {
+        max-width: 50%; /* Adjust the size on smaller screens */
+        margin-bottom: 20px; /* Add space below the image */
+    }
+}
+
+.btn {
+    display: inline-block; /* Aligns the buttons inline and allows you to set a width and height */
+    background-color: #FAB005; /* Gold color for the button background */
+    color: #000; /* Text color */
+    text-align: center; /* Centers the text inside the button */
+    padding: 10px 20px; /* Spacing inside the button */
+    border-radius: 20px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    text-decoration: none; /* Removes the underline from the text */
+    font-weight: bold; /* Makes the text bold */
+    margin: 5px; /* Adds space around the buttons */
+    cursor: pointer; /* Changes the cursor to indicate the button is clickable */
+}
+
+.btn:hover {
+    background-color: #e89e00; /* Darker gold color for the hover state */
+    /* You can also change the text color, border, etc., on hover if desired */
+}
+
+.about-content h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.about-content h1 {
+    color: #f0c674;
+    margin-bottom: 20px;
+}
 
 
