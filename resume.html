@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Enon Deogracious Jurence</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="resume-container">
+    <aside class="sidebar">
+        <!-- Logo and Navigation -->
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <nav class="resume-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="resume-content">
+        <!-- Skills Section -->
+        <section id="home" class="skills-section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-column">
+                    <!-- Column 2 for Skills -->
+                    <div class="skill">Javascript</div>
+                    <div class="skill">Python</div>
+                    <div class="skill">SQL</div>
+                </div>
+                <div class="skill-column">
+                    <!-- Column 2 for Skills -->
+                    <div class="skill">Communication</div>
+                    <div class="skill">Reliability</div>
+                    <div class="skill">Flexibility</div>
+                </div>
+                <div class="skill-column">
+                    <div class="skill">Analysis</div>
+                    <div class="skill">Web development</div>
+                    <div class="skill">Cyber security</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tools" class="tools-section">
+            <h2>Tools and Frameworks</h2>
+            <div class="skills-grid">
+
+                <!-- Version Control Column -->
+                <div class="skill-column">
+                    <div class="subheading" onclick="toggleContent('version-control-content')">
+                        <h3>Version Control<span class="dropdown-icon"> ▼ </span></h3>
+                    </div>
+                    <ul id="version-control-content" class="content-list" style="display: none;">
+                        <li>➼ Github</li>
+                        <li>➼ BitBucket</li>
+                        <li>➼ Helix Core</li>
+                        <li>➼ Sourcetree</li>
+                    </ul>
+                </div>
+
+                <!-- Frontend Technologies Column -->
+                <div class="skill-column">
+                    <div class="subheading" onclick="toggleContent('frontend-content')">
+                        <h3>Frontend Technologies<span class="dropdown-icon"> ▼ </span></h3>
+                    </div>
+                    <ul id="frontend-content" class="content-list" style="display: none;">
+                        <li>➼ Javascript</li>
+                        <li>➼ Typescript</li>
+                    </ul>
+                </div>
+
+                <!-- Backend Technologies Column -->
+                <div class="skill-column">
+                    <div class="subheading" onclick="toggleContent('database-content')">
+                        <h3>Databases<span class="dropdown-icon"> ▼ </span></h3>
+                    </div>
+                    <ul id="database-content" class="content-list" style="display: none;">
+                        <li>➼ SQL</li>
+                    </ul>
+                </div>
+
+                <!-- Test automation Column -->
+                <div class="skill-column">
+                    <div class="subheading" onclick="toggleContent('e2e-content')">
+                        <h3>End to End Testing<span class="dropdown-icon"> ▼ </span></h3>
+                    </div>
+                    <ul id="e2e-content" class="content-list" style="display: none;">
+                        <li>➼ CodeceptJs</li>
+                        <li>➼ Playwright</li>
+                        <li>➼ Webdriverio</li>
+                        <li>➼ Appium</li>
+                        <li>➼ Jasmine</li>
+                    </ul>
+                </div>
+
+                <!-- API Technologies Column -->
+                <div class="skill-column">
+                    <div class="subheading" onclick="toggleContent('api-content')">
+                        <h3>API Testing<span class="dropdown-icon"> ▼ </span></h3>
+                    </div>
+                    <ul id="api-content" class="content-list" style="display: none;">
+                        <li>➼ Hopscotch</li>
+                        <li>➼ Burpsuite</li>
+                        <li>➼ Postman</li>
+                    </ul>
+                </div>
+
+                <!-- CI Column -->
+                <div class="skill-column">
+                    <div class="subheading" onclick="toggleContent('ci-content')">
+                        <h3>Continuous Integration<span class="dropdown-icon"> ▼ </span></h3>
+                    </div>
+                    <ul id="ci-content" class="content-list" style="display: none;">
+                        <li>➼ CircleCi</li>
+                        <li>➼ Drone CI</li>
+                        <li>➼ Github Actions</li>
+                    </ul>
+                </div>
+
+                <!-- test case mgt Column -->
+                <div class="skill-column">
+                    <div class="subheading" onclick="toggleContent('testcase-mgt-content')">
+                        <h3>TestCase Management<span class="dropdown-icon"> ▼ </span></h3>
+                    </div>
+                    <ul id="testcase-mgt-content" class="content-list" style="display: none;">
+                        <li>➼ Jira</li>
+                        <li>➼ TestRail</li>
+                        <li>➼ Testomat</li>
+                        <li>➼ Microsoft Excel</li>
+                        <li>➼ Zephyr</li>
+                        <li>➼ TestCaseLab</li>
+                    </ul>
+                </div>
+
+                <!-- performance Column -->
+                <div class="skill-column">
+                    <div class="subheading" onclick="toggleContent('performance-content')">
+                        <h3>Performance Testing<span class="dropdown-icon"> ▼ </span></h3>
+                    </div>
+                    <ul id="performance-content" class="content-list" style="display: none;">
+                        <li>➼ Loadmill</li>
+                        <li>➼ K6</li>
+                        <li>➼ Requestly</li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </section>
+
+        <div class="container">
+            <!-- Experience Section -->
+            <div class="section experience">
+                <h2>Experience</h2>
+                <div class="date">08/2022</div>
+                <div class="content">Senior QA Engineer (Deel)</div>
+                <div class="duration">Present</div>
+
+                <div class="date">11/2021</div>
+                <div class="content">QA Engineer (Ergeon)</div>
+                <div class="duration">Present</div>
+
+                <div class="date">06/2019</div>
+                <div class="content">QA Engineer (Safeboda)</div>
+                <div class="duration">05/2021</div>
+
+                <div class="date">07/2018</div>
+                <div class="content">Manual QA Engineer (Upwork)</div>
+                <div class="duration">04/2020</div>
+
+                <div class="date">03/2019</div>
+                <div class="content">Cyber Security Intern (Tehtris)</div>
+                <div class="duration">07/2019</div>
+            </div>
+
+
+            <!-- Education Section -->
+            <div class="section education">
+                <h2>Education</h2>
+                <div class="date">01/2016</div>
+                <div class="content">Bsc Networking and Cybersecurity at International Science, Business And Technology University</div>
+                <div class="duration">02/2019</div>
+            </div>
+        </div>
+            </section>
+
+        <section id="certifications" class="certifications-section">
+            <h2 class="section-title">Parchments</h2>
+        <div class="skills-grid">
+            <div class="skill-column">
+                <!-- Column 2 for Skills -->
+                <a href="https://www.testdome.com/certificates/7b5ce6240b91489785baf66a37430013" class="skill">Software Quality Assurance (TestDome)</a>
+                <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-17c4593f-7379-42d3-a98f-c1f7c7582fa7.pdf" class="skill">Agile Essentials (Udemy)</a>
+                <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-bfcb7a36-ced7-48bc-be00-b7de86afb66f.pdf" class="skill">CCNA Masterclass (Udemy)</a>
+                <a href="https://www.sololearn.com/certificates/CT-UJJZA3E0" class="skill">Python Core (SoloLearn)</a>
+            </div>
+            <div class="skill-column">
+                <!-- Column 2 for Skills -->
+                <a href="https://www.sololearn.com/certificates/CT-KNZM3JQP" class="skill">Structured Query Language (SoloLearn)</a>
+                <a href="https://www.sololearn.com/certificates/CC-POVMQWD5" class="skill">Javascript (SoloLearn)</a>
+                <a href="https://www.sololearn.com/certificates/CC-7ETQPPZY" class="skill">Internet Of Things (SoloLearn)</a>
+                <a href="https://www.udemy.com/certificate/UC-249c739a-b801-4266-8376-9cc8daa340df/" class="skill">CompTia Network+ Masterclass (Udemy)</a>
+            </div>
+<!--            <div class="skill-column">-->
+<!--                &lt;!&ndash; Column 3 for Skills &ndash;&gt;-->
+<!--                <div class="skill">Git</div>-->
+<!--                <div class="skill">Burpsuite</div>-->
+<!--                <div class="skill">CircleCI</div>-->
+<!--            </div>-->
+        </div>
+        </section>
+        </div>
+
+    </main>
+</div>
+        </section>
+        <!-- Other Sections (Skills, Experience, etc.) -->
+        <!-- ... Your existing sections ... -->
+    </main>
+</div>
+<footer>
+    <p>Copyright © 2023 Enon Deogracious Jurence</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
