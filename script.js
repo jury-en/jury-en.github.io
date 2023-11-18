@@ -29,4 +29,30 @@ function toggleContent(id) {
 //         content.style.display = 'none';
 //     }
 // }
+document.addEventListener("DOMContentLoaded", function(event) {
+    document.getElementById('whatsapp-send').addEventListener('click', function() {
+        // Get the form data
+        var firstName = document.querySelector('input[name="first-name"]').value;
+        var lastName = document.querySelector('input[name="last-name"]').value;
+        var email = document.querySelector('input[name="email"]').value;
+        var message = document.querySelector('textarea[name="message"]').value;
+
+        // Construct the WhatsApp message
+        var fullMessage = "Hello, my name is " + firstName + " " + lastName +
+            ".\nEmail: " + email + "\nMessage: " + message;
+
+        // Encode the message for a URL
+        var encodedMessage = encodeURIComponent(fullMessage);
+
+        // Define your phone number (Replace it with your actual number)
+        var whatsappNumber = "+256705870892"; // Include country code
+
+        // Construct the WhatsApp URL
+        var whatsappUrl = "https://wa.me/" + whatsappNumber + "?text=" + encodedMessage;
+
+        // Open the URL in a new tab
+        window.open(whatsappUrl, '_blank');
+    });
+}); // This is the missing closing bracket.
+
 
