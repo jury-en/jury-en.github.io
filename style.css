@@ -346,4 +346,85 @@ footer {
     display: flex;
 }
 
+.tools-section h2 {
+    text-align: center;
+}
+
+.skill-column .subheading h3 {
+    text-align: center;
+}
+.container {
+    display: flex; /* This creates a flex container that holds both sections side by side */
+    justify-content: space-between; /* This spreads out the flex items evenly */
+    align-items: flex-start; /* Aligns items to the top of the container */
+    padding: 40px; /* Add padding as necessary */
+}
+.experience .duration + .date {
+    margin-top: 20px;
+}
+
+
+.section {
+    width: 45%; /* Adjust the width as necessary */
+}
+
+.section h2 {
+    margin-bottom: 15px; /* Adjust space under the section title */
+}
+
+.date {
+    font-weight: bold; /* Make the date stand out */
+}
+
+.content {
+    /* Add styles for the job title and school program */
+}
+
+.duration {
+    font-style: italic; /* Typically, durations are italicized */
+}
+
+/* Add responsive design if needed */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack the sections on top of each other on smaller screens */
+    }
+
+    .section {
+        width: 100%; /* Each section takes full width on smaller screens */
+        margin-bottom: 20px; /* Add space between stacked sections */
+    }
+}
+.certifications-section h3 {
+    /* Style your Certifications heading here to match other headings */
+}
+
+.certifications-section .skills-grid {
+    display: flex;
+    justify-content: space-between; /* This will space out your columns */
+    flex-wrap: wrap; /* Allows wrapping to next line on smaller screens */
+}
+
+.certifications-section .skill-column {
+    width: 48%; /* Adjust the width as needed */
+    /* Add padding or margins as necessary */
+}
+
+.certifications-section .skill {
+    display: block; /* Makes the anchor tag behave like a block */
+    background: #333; /* Example style */
+    color: #fff; /* Example style */
+    padding: 10px; /* Example style */
+    margin-bottom: 10px; /* Space between skills */
+    text-decoration: none; /* Removes underline from links */
+}
+
+/* Optional: Add media queries for responsiveness */
+@media (max-width: 768px) {
+    .certifications-section .skill-column {
+        width: 100%; /* Full width on smaller screens */
+        margin-bottom: 10px; /* Space between columns when they stack */
+    }
+}
+
 
