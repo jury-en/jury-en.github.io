@@ -427,4 +427,14 @@ footer {
     }
 }
 
+.section-title {
+    color: #FFF; /* Example text color, adjust as per your design */
+    text-align: center; /* Centers the text */
+    background-color: transparent !important; /* Example background color, adjust as per your design */
+    padding: 10px; /* Example padding, adjust as per your design */
+    /* Rest of the styles as per your design */
+}
+
+
+
 
