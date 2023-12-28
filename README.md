@@ -1,2 +1,2 @@
 # ReadWho
-hhtps://jurence.github.io
+https://jurence.github.io
