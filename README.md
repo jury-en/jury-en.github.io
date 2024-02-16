@@ -1,2 +1,2 @@
-# ReadWhos
+# ReadWhoss
 https://jurence.github.io
