@@ -1,2 +1,2 @@
-# Read-Jurence
+# Read-Jurences
 https://jurence.github.io
