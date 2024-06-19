@@ -1,2 +1,2 @@
-# Read-Jurencesssss
+# Read-Jurencessssss
 https://jurence.github.io
