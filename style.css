@@ -253,6 +253,226 @@ footer {
     font-size: 1.05em;
 }
 
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .resume-container {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+    
+    .resume-nav ul {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        gap: 5px;
+        overflow-x: auto;
+    }
+    
+    .resume-nav ul li {
+        padding: 5px 8px;
+        flex-shrink: 0;
+    }
+    
+    .resume-nav ul li a {
+        font-size: 0.8em;
+        white-space: nowrap;
+    }
+    
+    .logo {
+        display: none;
+    }
+    
+    .resume-content {
+        padding: 20px;
+    }
+    
+    .main-content {
+        padding: 20px;
+    }
+    
+    /* Home page mobile */
+    .about-content {
+        padding: 20px;
+        min-height: auto;
+    }
+    
+    .profile-image {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 15px;
+    }
+    
+    .about-text h1 {
+        font-size: 1.8em;
+    }
+    
+    .about-text h2 {
+        font-size: 1.4em;
+    }
+    
+    /* Skills section mobile */
+    .skills-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .skill-column {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+    
+    .skill {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+    
+    /* Tools section mobile */
+    .tools-section .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    /* Portfolio page mobile */
+    .contact-page-wrapper,
+    .portfolio-wrapper {
+        padding: 20px;
+    }
+    
+    .apps-list {
+        gap: 20px;
+    }
+    
+    .app-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .app-stores {
+        justify-content: center;
+    }
+    
+    .portfolio-stats {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    /* Contact page mobile */
+    .contact-list {
+        gap: 15px;
+    }
+    
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 20px;
+    }
+    
+    .contact-header h1 {
+        font-size: 2em;
+    }
+    
+    .contact-header p {
+        font-size: 1em;
+        padding: 0 10px;
+    }
+    
+    /* About page mobile */
+    .hero-intro h1 {
+        font-size: 2em;
+    }
+    
+    .hero-intro h2 {
+        font-size: 1.2em;
+    }
+    
+    .philosophy-grid,
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .passion-content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .passion-item {
+        background-color: #1e1e1e;
+        padding: 20px;
+        border-radius: 8px;
+        border-left: 4px solid #f0c674;
+    }
+    
+    /* Resume page mobile */
+    .container {
+        padding: 20px;
+    }
+    
+    .section.experience,
+    .section.education {
+        padding: 15px;
+    }
+    
+    .certifications-section .skills-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .certifications-section .skill-column {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .resume-nav ul li a {
+        font-size: 0.8em;
+        padding: 8px 12px;
+    }
+    
+    .about-text h1 {
+        font-size: 1.5em;
+    }
+    
+    .about-text h2 {
+        font-size: 1.2em;
+    }
+    
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .contact-header h1 {
+        font-size: 1.8em;
+    }
+    
+    .hero-intro h1 {
+        font-size: 1.8em;
+    }
+    
+    .app-item {
+        padding: 15px;
+    }
+    
+    .contact-item {
+        padding: 15px;
+    }
+}
+
 /* Style for skill section */
 .skill {
     background-color: #333;
