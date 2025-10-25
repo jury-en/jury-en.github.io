@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - Deogracious</title>
+  <title>Home - Jury</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/your-fontawesome-kit-code.js" crossorigin="anonymous"></script>
   <style>
@@ -37,6 +37,23 @@
       margin: 10px 0;
       white-space: nowrap;
     }
+
+    .profile-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 20px auto;
+      border: 4px solid #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      display: block;
+    }
+
+    .profile-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   </style>
 </head>
 <body>
@@ -48,9 +65,10 @@
     </div>
     <nav class="resume-nav">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li class="active"><a href="about.html">About</a></li>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="resume.html">Resume</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -59,11 +77,14 @@
   <main class="main-content">
     <section id="about" class="about-content">
       <div class="about-text">
+        <div class="profile-image">
+          <img src="profile.jpg" alt="Jury">
+        </div>
         <h1>Hello 👋🏼</h1>
-        <h2>I'm Deogracious E.</h2>
-        <p>A Software Quality Engineer🧪</p>
+        <h2>I'm Jury.</h2>
+        <p>A Mobile App Developer🧪</p>
         <div class="about-actions">
-          <a href="Resume.pdf" class="btn" download="Enon_Deogracious_Resume.pdf">View Resume</a>
+          <!-- <a href="Resume.pdf" class="btn" download="Enon_Deogracious_Resume.pdf">View Resume</a> -->
           <a href="contact.html" class="btn">Hire me</a>
         </div>
         <!-- Social Media Links -->
@@ -80,7 +101,7 @@
 </div>
 
 <footer>
-  <p>Copyright © 2025 Enon Deogracious</p>
+  <p>Copyright © 2025 Jury</p>
 </footer>
 
 <script src="script.js"></script>

@@ -66,6 +66,193 @@ footer {
     color: #ffffff;
 }
 
+/* Portfolio page styles */
+.apps-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.app-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e1e;
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 4px solid #f0c674;
+}
+
+.app-info h3 {
+    color: #f0c674;
+    margin: 0 0 10px 0;
+    font-size: 1.3em;
+}
+
+.app-info p {
+    color: #cccccc;
+    margin: 0 0 15px 0;
+    line-height: 1.5;
+}
+
+.tech-stack {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tech {
+    background-color: #333;
+    color: #ffffff;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.85em;
+}
+
+.app-stores {
+    display: flex;
+    gap: 15px;
+}
+
+.store-btn {
+    background-color: #f0c674;
+    color: #121212;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.store-btn:hover {
+    background-color: #e6b85c;
+    transform: translateY(-2px);
+}
+
+.portfolio-stats {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-item h4 {
+    color: #f0c674;
+    font-size: 2em;
+    margin: 0 0 5px 0;
+}
+
+.stat-item p {
+    color: #cccccc;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Contact page styles */
+.contact-page-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-header h1 {
+    color: #f0c674;
+    font-size: 2.5em;
+    margin: 0 0 15px 0;
+}
+
+.contact-header p {
+    color: #cccccc;
+    font-size: 1.1em;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 40px 0;
+}
+
+.contact-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e1e;
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 4px solid #f0c674;
+}
+
+.contact-info h3 {
+    color: #f0c674;
+    margin: 0 0 8px 0;
+    font-size: 1.3em;
+}
+
+.contact-info p {
+    color: #cccccc;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.contact-link {
+    display: flex;
+}
+
+.contact-btn {
+    background-color: #f0c674;
+    color: #121212;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    min-width: 80px;
+    text-align: center;
+}
+
+.contact-btn:hover {
+    background-color: #e6b85c;
+    transform: translateY(-2px);
+}
+
+.availability-section {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.availability-section h2 {
+    color: #f0c674;
+    margin: 0 0 15px 0;
+    font-size: 1.8em;
+}
+
+.availability-section p {
+    color: #cccccc;
+    margin: 0;
+    line-height: 1.6;
+    font-size: 1.05em;
+}
+
 /* Style for skill section */
 .skill {
     background-color: #333;

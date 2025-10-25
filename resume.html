@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Enon Deogracious</title>
+    <title>Resume - Jury</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,6 +18,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="resume.html">Resume</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -28,24 +29,28 @@
             <h2>Skills</h2>
             <div class="skills-grid">
                 <div class="skill-column">
-                    <!-- Column 2 for Skills -->
-                    <div class="skill">Javascript</div>
+                    <h4 class="skill-category">Mobile Development</h4>
+                    <div class="skill">Flutter</div>
+                    <div class="skill">Dart</div>
+                    <div class="skill">React Native</div>
+                    <div class="skill">Swift (iOS)</div>
+                    <div class="skill">Kotlin (Android)</div>
+                </div>
+                <div class="skill-column">
+                    <h4 class="skill-category">Backend & APIs</h4>
+                    <div class="skill">GraphQL</div>
+                    <div class="skill">REST APIs</div>
+                    <div class="skill">Firebase</div>
+                    <div class="skill">Node.js</div>
                     <div class="skill">Python</div>
-                    <div class="skill">SQL</div>
-                    <div class="skill">Typescript</div>
                 </div>
                 <div class="skill-column">
-                    <!-- Column 2 for Skills -->
-                    <div class="skill">Communication</div>
-                    <div class="skill">Reliability</div>
-                    <div class="skill">Flexibility</div>
-                    <div class="skill">Efficiency</div>
-                </div>
-                <div class="skill-column">
-                    <div class="skill">Analysis</div>
-                    <div class="skill">Web development</div>
-                    <div class="skill">Cyber security</div>
-                    <div class="skill">Flutter App Development</div>
+                    <h4 class="skill-category">Core Skills</h4>
+                    <div class="skill">UI/UX Design</div>
+                    <div class="skill">State Management</div>
+                    <div class="skill">App Architecture</div>
+                    <div class="skill">Performance Optimization</div>
+                    <div class="skill">Cross-platform Development</div>
                 </div>
             </div>
         </section>
@@ -67,139 +72,130 @@
                     </ul>
                 </div>
 
-                <!-- Frontend Technologies Column -->
+                <!-- Mobile Development Column -->
                 <div class="skill-column">
-                    <div class="subheading" onclick="toggleContent('frontend-content')">
-                        <h3>Frontend Technologies<span class="dropdown-icon"> ▼ </span></h3>
+                    <div class="subheading" onclick="toggleContent('mobile-content')">
+                        <h3>Mobile Development<span class="dropdown-icon"> ▼ </span></h3>
                     </div>
-                    <ul id="frontend-content" class="content-list" style="display: none;">
-                        <li>➼ Javascript</li>
-                        <li>➼ Typescript</li>
+                    <ul id="mobile-content" class="content-list" style="display: none;">
+                        <li>➼ Flutter & Dart</li>
+                        <li>➼ React Native</li>
+                        <li>➼ Swift (iOS)</li>
+                        <li>➼ Kotlin (Android)</li>
+                        <li>➼ Xamarin</li>
                     </ul>
                 </div>
 
-                <!-- Backend Technologies Column -->
+                <!-- Backend & APIs Column -->
                 <div class="skill-column">
-                    <div class="subheading" onclick="toggleContent('database-content')">
-                        <h3>Databases<span class="dropdown-icon"> ▼ </span></h3>
+                    <div class="subheading" onclick="toggleContent('backend-content')">
+                        <h3>Backend & APIs<span class="dropdown-icon"> ▼ </span></h3>
                     </div>
-                    <ul id="database-content" class="content-list" style="display: none;">
-                        <li>➼ SQL</li>
+                    <ul id="backend-content" class="content-list" style="display: none;">
+                        <li>➼ GraphQL</li>
+                        <li>➼ REST APIs</li>
+                        <li>➼ Firebase</li>
+                        <li>➼ Node.js</li>
+                        <li>➼ Express.js</li>
+                        <li>➼ MongoDB</li>
+                        <li>➼ PostgreSQL</li>
                     </ul>
                 </div>
 
-                <!-- Test automation Column -->
+                <!-- Mobile Testing Column -->
                 <div class="skill-column">
-                    <div class="subheading" onclick="toggleContent('e2e-content')">
-                        <h3>End to End Testing<span class="dropdown-icon"> ▼ </span></h3>
+                    <div class="subheading" onclick="toggleContent('mobile-testing-content')">
+                        <h3>Mobile Testing<span class="dropdown-icon"> ▼ </span></h3>
                     </div>
-                    <ul id="e2e-content" class="content-list" style="display: none;">
-                        <li>➼ CodeceptJs</li>
-                        <li>➼ Playwright</li>
-                        <li>➼ Webdriverio</li>
+                    <ul id="mobile-testing-content" class="content-list" style="display: none;">
+                        <li>➼ Flutter Test</li>
+                        <li>➼ XCTest (iOS)</li>
+                        <li>➼ Espresso (Android)</li>
+                        <li>➼ Detox (React Native)</li>
                         <li>➼ Appium</li>
-                        <li>➼ Jasmine</li>
+                        <li>➼ Firebase Test Lab</li>
                     </ul>
                 </div>
 
-                <!-- API Technologies Column -->
+                <!-- State Management Column -->
                 <div class="skill-column">
-                    <div class="subheading" onclick="toggleContent('api-content')">
-                        <h3>API Testing<span class="dropdown-icon"> ▼ </span></h3>
+                    <div class="subheading" onclick="toggleContent('state-content')">
+                        <h3>State Management<span class="dropdown-icon"> ▼ </span></h3>
                     </div>
-                    <ul id="api-content" class="content-list" style="display: none;">
-                        <li>➼ Hopscotch</li>
-                        <li>➼ Burpsuite</li>
-                        <li>➼ Postman</li>
+                    <ul id="state-content" class="content-list" style="display: none;">
+                        <li>➼ BLoC (Flutter)</li>
+                        <li>➼ Provider (Flutter)</li>
+                        <li>➼ Riverpod (Flutter)</li>
+                        <li>➼ Redux (React Native)</li>
+                        <li>➼ MobX</li>
+                        <li>➼ GetX (Flutter)</li>
                     </ul>
                 </div>
 
-                <!-- CI Column -->
+                <!-- DevOps & Deployment Column -->
                 <div class="skill-column">
-                    <div class="subheading" onclick="toggleContent('ci-content')">
-                        <h3>Continuous Integration<span class="dropdown-icon"> ▼ </span></h3>
+                    <div class="subheading" onclick="toggleContent('devops-content')">
+                        <h3>DevOps & Deployment<span class="dropdown-icon"> ▼ </span></h3>
                     </div>
-                    <ul id="ci-content" class="content-list" style="display: none;">
-                        <li>➼ CircleCi</li>
-                        <li>➼ Drone CI</li>
+                    <ul id="devops-content" class="content-list" style="display: none;">
+                        <li>➼ App Store Connect</li>
+                        <li>➼ Google Play Console</li>
+                        <li>➼ Fastlane</li>
+                        <li>➼ CodeMagic</li>
                         <li>➼ Github Actions</li>
+                        <li>➼ Bitrise</li>
                     </ul>
                 </div>
 
-                <!-- test case mgt Column -->
+                <!-- Design & UI Column -->
                 <div class="skill-column">
-                    <div class="subheading" onclick="toggleContent('testcase-mgt-content')">
-                        <h3>TestCase Management<span class="dropdown-icon"> ▼ </span></h3>
+                    <div class="subheading" onclick="toggleContent('design-content')">
+                        <h3>Design & UI Tools<span class="dropdown-icon"> ▼ </span></h3>
                     </div>
-                    <ul id="testcase-mgt-content" class="content-list" style="display: none;">
-                        <li>➼ Jira</li>
-                        <li>➼ TestRail</li>
-                        <li>➼ Testomat</li>
-                        <li>➼ Microsoft Excel</li>
-                        <li>➼ Zephyr</li>
-                        <li>➼ TestCaseLab</li>
+                    <ul id="design-content" class="content-list" style="display: none;">
+                        <li>➼ Figma</li>
+                        <li>➼ Adobe XD</li>
+                        <li>➼ Sketch</li>
+                        <li>➼ Material Design</li>
+                        <li>➼ Human Interface Guidelines</li>
+                        <li>➼ Lottie Animations</li>
                     </ul>
                 </div>
 
-                <!-- performance Column -->
+                <!-- Analytics & Monitoring Column -->
                 <div class="skill-column">
-                    <div class="subheading" onclick="toggleContent('performance-content')">
-                        <h3>Performance Testing<span class="dropdown-icon"> ▼ </span></h3>
+                    <div class="subheading" onclick="toggleContent('analytics-content')">
+                        <h3>Analytics & Monitoring<span class="dropdown-icon"> ▼ </span></h3>
                     </div>
-                    <ul id="performance-content" class="content-list" style="display: none;">
-                        <li>➼ Loadmill</li>
-                        <li>➼ K6</li>
-                        <li>➼ Requestly</li>
+                    <ul id="analytics-content" class="content-list" style="display: none;">
+                        <li>➼ Firebase Analytics</li>
+                        <li>➼ Google Analytics</li>
+                        <li>➼ Crashlytics</li>
+                        <li>➼ Sentry</li>
+                        <li>➼ Mixpanel</li>
+                        <li>➼ App Center</li>
                     </ul>
                 </div>
 
             </div>
         </section>
 
-        <div class="container">
-            <!-- Experience Section -->
-            <div class="section experience">
-                <h2>Experience</h2>
-                <div class="date">03/2025</div>
-                <div class="content">QA Lead (Zormor)</div>
-                <div class="duration">Present</div>
-
-                <div class="date">11/2021</div>
-                <div class="content">QA Engineer (Ergeon)</div>
-                <div class="duration">03/2025</div>
-
-                <div class="date">06/2019</div>
-                <div class="content">QA Engineer (Safeboda)</div>
-                <div class="duration">10/2021</div>
-
-                <div class="date">01/2019</div>
-                <div class="content">Cyber Security Instructor (Hackhouse)</div>
-                <div class="duration">10/2019</div>
-            </div>
-
-            <!-- Education Section -->
-            <div class="section education">
-                <h2>Education</h2>
-                <div class="date">01/2016</div>
-                <div class="content">Bsc Networking and Cybersecurity at International Science, Business And Technology University</div>
-                <div class="duration">02/2019</div>
-            </div>
-        </div>
 
         <!-- Parchments Section - moved outside container, after Experience and Education -->
         <section id="certifications" class="certifications-section">
             <h2 class="section-title">Parchments</h2>
             <div class="skills-grid">
                 <div class="skill-column">
-                    <a href="https://www.testdome.com/certificates/7b5ce6240b91489785baf66a37430013" class="skill">Software Quality Assurance (TestDome)</a>
-                    <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-17c4593f-7379-42d3-a98f-c1f7c7582fa7.pdf" class="skill">Agile Essentials (Udemy)</a>
-                    <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-bfcb7a36-ced7-48bc-be00-b7de86afb66f.pdf" class="skill">CCNA Masterclass (Udemy)</a>
+                    <a href="https://www.sololearn.com/certificates/CC-POVMQWD5" class="skill">Javascript (SoloLearn)</a>
                     <a href="https://www.sololearn.com/certificates/CT-UJJZA3E0" class="skill">Python Core (SoloLearn)</a>
+                    <a href="https://www.sololearn.com/certificates/CT-KNZM3JQP" class="skill">Structured Query Language (SoloLearn)</a>
+                    <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-17c4593f-7379-42d3-a98f-c1f7c7582fa7.pdf" class="skill">Agile Essentials (Udemy)</a>
+                    <a href="#" class="skill">Flutter Development Masterclass (Udemy)</a>
                 </div>
                 <div class="skill-column">
-                    <a href="https://www.sololearn.com/certificates/CT-KNZM3JQP" class="skill">Structured Query Language (SoloLearn)</a>
-                    <a href="https://www.sololearn.com/certificates/CC-POVMQWD5" class="skill">Javascript (SoloLearn)</a>
                     <a href="https://www.sololearn.com/certificates/CC-7ETQPPZY" class="skill">Internet Of Things (SoloLearn)</a>
+                    <a href="https://www.testdome.com/certificates/7b5ce6240b91489785baf66a37430013" class="skill">Software Quality Assurance (TestDome)</a>
+                    <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-bfcb7a36-ced7-48bc-be00-b7de86afb66f.pdf" class="skill">CCNA Masterclass (Udemy)</a>
                     <a href="https://www.udemy.com/certificate/UC-249c739a-b801-4266-8376-9cc8daa340df/" class="skill">CompTia Network+ Masterclass (Udemy)</a>
                 </div>
             </div>
@@ -208,7 +204,7 @@
 </div>
 
 <footer>
-    <p>Copyright © 2025 Enon Deogracious</p>
+    <p>Copyright © 2025 Jury</p>
 </footer>
 <script src="script.js"></script>
 </body>
